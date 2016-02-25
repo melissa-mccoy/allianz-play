@@ -1,2 +1,2 @@
 # name-that-mba
-Oxford Said Business School MBA Quiz App
+Oxford Said Business School Allianz Play App

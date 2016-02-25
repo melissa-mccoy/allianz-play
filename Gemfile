@@ -18,8 +18,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-# Facebook authentication
-gem 'omniauth-facebook'
 # Facebook API
 gem "koala", "~> 1.10.0rc"
 
