@@ -4,14 +4,43 @@
             <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                 <i class="fa fa-reorder"></i>
             </button>
-            <a href="/" class="navbar-brand" style="padding:15px;width:225px;"><%= image_tag "logo3.png", width:"100%" %></a>
+            <a href="/" class="navbar-brand" style="padding:15px;width:225px;"><%= image_tag "allianz-play-logo.png", width:"100%" %></a>
+            <p style="margin-top:10px">We see that you're at the <strong>FC Saracens vs Gloucester Rugby</strong> Game.</p>
 
         </div>
         <div class="navbar-collapse collapse" id="navbar">
         <ul class="nav navbar-top-links navbar-right">
-            <li><a href="<%= url_for new_game_path %>"><i class="fa fa-gamepad"></i>New Game</a></li>
+            <li><a data-toggle="modal" data-target="#pointsModal" href=""><i class="fa fa-check"></i>Your Allianz Points: <strong>50</strong></a></li>
+            <li><a href="<%= url_for new_game_path %>"><i class="fa fa-gamepad"></i>New Quiz</a></li>
+            <li><a href="<%= url_for new_bet_game_path %>"><i class="fa fa-gavel"></i>Bet Now</a></li>
             <li><a href="<%= url_for games_path %>"><i class="fa fa-trophy"></i>High Scores</a></li>
         </ul>
         </div>
     </nav>
+</div>
+
+<div class="modal inmodal" id="pointsModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content animated fadeIn text-center">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
+              <i class="fa fa-trophy modal-icon"></i>
+              <h4 class="modal-title">Awesome Job Andrew!<br>You have 50 Allianz points</h4>
+          </div>
+          <div class="modal-body" style="max-height: 350px; overflow-y: auto;">
+            <div class="col-sm-12"><h1>Redeem them for sweet stuff!</h1></div>
+            <div class="col-sm-6">
+                <p><strong>Want to win awesome prizes like a snowboarding trip?</strong><br>Enter Our Sweepstakes - 1 in 100 win!</p>
+                <a href="https://www.allianz.com/" type="button" class="btn btn-primary dim" data-dismiss="modal">Enter Here</a>
+            </div>
+            <div class="col-sm-6">
+                <p><strong>Want peice of mind as you head out to the slopes?</strong><br>Get discounts & Join the Allianz Family!</p>
+                <a href="https://www.allianz.com/" type="button" class="btn btn-primary dim" data-dismiss="modal">Enter Here</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+          </div>
+      </div>
+  </div>
 </div>

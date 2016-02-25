@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/games-b/new", to: "games#new_b", as: "new_b_game"
   get "/games-c/new", to: "games#new_c", as: "new_c_game"
   get "/games-d/new", to: "games#new_d", as: "new_d_game"
+  get "/games-bet/new", to: "games#new_bet", as: "new_bet_game"
 
   get "/dashboard", to: "games#dashboard", as: "dashboard"
 end

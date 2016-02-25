@@ -1,0 +1,74 @@
+<div class="wrapper wrapper-content">
+<div class="row animated fadeInLeft">
+  <div class="col-md-8 col-md-offset-2 text-center">
+    <div class="ibox-title">
+      <div class="row">
+      </div>
+    </div>
+    <div class="ibox-content">
+      <h1><strong>Who do you think will win?</strong></h1>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-3">
+          <%= image_tag "saracens-logo.png", :class => "img-responsive"%>
+        </div>
+        <div class="col-sm-3" style="margin: 15px 0">
+          <%= image_tag "gloucester-logo.png", :class => "img-responsive"%>
+        </div>
+      </div>
+      <div class="row">
+        <p>Allianz Points to Bet</p>
+        <input class="block m-b ans inline dim"></input>
+        <p>Choose Your Team</p>
+        <button data-toggle="modal" data-target="#saracensModal" class="btn btn-primary block m-b ans inline dim">FC Saracens</button>
+        <button data-toggle="modal" data-target="#gloucesterModal" class="btn btn-primary block m-b ans inline dim">Gloucester Rugby</button>
+      </div>
+      <div class="row animated fadeInLeft">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div id="responseMessage"></div>
+        </div>
+      </div>
+      <div class="row text-right">
+        <div class="col-sm-12">
+          <button class="btn dim" id="next" style="display:none"> Next <i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="row text-right">
+      </div>
+    </div>
+    <div class="modal inmodal" id="saracensModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content animated fadeIn text-center">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
+                  <i class="fa fa-trophy modal-icon"></i>
+                  <h4 class="modal-title">You've Bet On FC Saracens!</h4>
+              </div>
+              <div class="modal-body" style="max-height: 350px; overflow-y: auto;">
+                  <h2>Let's see if you're lucky :)<br>You can return and continue betting throughout the duration of the game, getting different odds depending on the game status.</h2>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal inmodal" id="gloucesterModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content animated fadeIn  text-center">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
+                  <i class="fa fa-trophy modal-icon"></i>
+                  <h4 class="modal-title">You've Bet On Gloucester Rugby!</h4>
+              </div>
+              <div class="modal-body" style="max-height: 350px; overflow-y: auto;">
+                  <h2>Let's see if you're lucky :)<br>You can return and continue betting throughout the duration of the game, getting different odds depending on the game status.</h2>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
