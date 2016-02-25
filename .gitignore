@@ -11,4 +11,3 @@
 /log/*.log
 /tmp
 /config/secret.yml
-/config/facebook.yml
